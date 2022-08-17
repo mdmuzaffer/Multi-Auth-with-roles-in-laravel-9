@@ -14,6 +14,14 @@ Make database and add in .ENV file
 
 
 
+
+
+
+
+
+
+
+
  public function up() {
  
  
