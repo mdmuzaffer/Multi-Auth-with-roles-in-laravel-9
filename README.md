@@ -148,9 +148,12 @@ Here is the view file content for admin
 ----------------------------------
 
 
+
+
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     
     <div class="row justify-content-center">
@@ -252,6 +255,9 @@ Route::get('/academy', [App\Http\Controllers\AcademicController::class, 'index']
 
 Note :- Login and Register url is default as auth default.
 -----------------------------------------------------
+
+https://prnt.sc/e1FI0lbKGdyl
+
 /login
 /register
 
