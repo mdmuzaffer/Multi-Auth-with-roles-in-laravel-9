@@ -13,7 +13,9 @@ Make database and add in .ENV file
 
  public function up() 
  {
+ 
         Schema::create('users', function (Blueprint $table) {
+        
         
 			$table->increments('id');
             
@@ -34,6 +36,7 @@ Make database and add in .ENV file
             $table->timestamps();
             
         });
+        
     }
     
 
