@@ -258,6 +258,9 @@ Note :- Login and Register url is default as auth default.
 
 https://prnt.sc/e1FI0lbKGdyl
 
+![image](https://user-images.githubusercontent.com/58267203/185115347-7ea1fed0-4566-48c9-869a-40c1cd34131f.png)
+
+
 /login
 /register
 
