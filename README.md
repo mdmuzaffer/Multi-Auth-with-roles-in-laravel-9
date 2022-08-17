@@ -142,12 +142,16 @@ a. superadmin.blade.php
 b. admin.blade.php
 b. player.blade.php
 b. team.blade.php
-etc
+
+
+Here is the screenshot 
+====================================
+
+![image](https://user-images.githubusercontent.com/58267203/185115786-ff3d9eb3-e675-488e-bc55-13b7d1fc4239.png)
+
 
 Here is the view file content for admin
 ----------------------------------
-
-
 
 
 @extends('layouts.app')
@@ -236,6 +240,12 @@ if(Auth::check() && Auth::user()->role == 1){
 
 'academy' => \App\Http\Middleware\Academic::class,
 
+Here is the screenshot 
+------------------------------
+
+![image](https://user-images.githubusercontent.com/58267203/185115971-ae33f1e7-226d-429c-b399-e89e8e0a49cc.png)
+
+
 
 9. Now make the route in web.php file
 ----------------------------------------------
@@ -256,7 +266,6 @@ Route::get('/academy', [App\Http\Controllers\AcademicController::class, 'index']
 Note :- Login and Register url is default as auth default.
 -----------------------------------------------------
 
-https://prnt.sc/e1FI0lbKGdyl
 
 ![image](https://user-images.githubusercontent.com/58267203/185115347-7ea1fed0-4566-48c9-869a-40c1cd34131f.png)
 
