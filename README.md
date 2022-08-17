@@ -139,10 +139,15 @@ php artisan make:controller AcademicController
 php artisan make:controller ScoutController
 
 In all controller make a function and return view as name ,So make view file in view folder like:-
+
 a. superadmin.blade.php
+
 b. admin.blade.php
+
 b. player.blade.php
+
 b. team.blade.php
+
 
 
 Here is the screenshot 
