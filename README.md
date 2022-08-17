@@ -110,10 +110,15 @@ php artisan db:seed --class=CreateUsersSeeder
 -------------------------------
 
 php artisan make:controller SuperadminController
+
 php artisan make:controller AdminController
+
 php artisan make:controller PlayerController
+
 php artisan make:controller TeamController
+
 php artisan make:controller AcademicController
+
 php artisan make:controller ScoutController
 
 In all controller make a function and return view as name ,So make view file in view folder like:-
@@ -175,10 +180,15 @@ public function index()
 -------------------------------
 
 php artisan make:middleware Superadmin
+
 php artisan make:middleware Admin
+
 php artisan make:middleware Player
+
 php artisan make:middleware Team
+
 php artisan make:middleware Academic
+
 php artisan make:middleware Scout
 
 In all middleware to check the users role and direct with following code
