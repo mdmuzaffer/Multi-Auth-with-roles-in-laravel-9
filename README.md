@@ -4,6 +4,7 @@ This project in laravel 9 so should be PHP version 8
 ================================================
 
 1. First create project
+
 composer create-project laravel/laravel multiauth
 
 Make database and add in .ENV file 
