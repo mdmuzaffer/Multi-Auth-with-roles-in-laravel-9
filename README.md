@@ -8,8 +8,10 @@ composer create-project laravel/laravel multiauth
 
 Make database and add in .ENV file 
 
-2. Add the role field in user migration table
-I have added the role field in migration default user migration schema
+2. Add the role field in user migration table.
+
+
+3. I have added the role field in migration default user migration schema
 
 
 
