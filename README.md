@@ -11,9 +11,7 @@ Make database and add in .ENV file
 2. Add the role field in user migration table
 
 
- public function up()
-    {
-    
+ public function up() {
         Schema::create('users', function (Blueprint $table) {
         
 			$table->increments('id');
@@ -34,9 +32,7 @@ Make database and add in .ENV file
             
             $table->timestamps();
             
-			
         });
-        
     }
     
 
