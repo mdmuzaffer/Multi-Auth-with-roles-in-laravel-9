@@ -10,6 +10,7 @@ Make database and add in .ENV file
 
 2. Add the role field in user migration table
 
+
  public function up()
     {
         Schema::create('users', function (Blueprint $table) {
@@ -30,11 +31,11 @@ Make database and add in .ENV file
 ------------------------
 php artisan migrate
 
-composer require laravel/ui ,
+composer require laravel/ui 
 
-php artisan ui bootstrap --auth ,
+php artisan ui bootstrap --auth 
 
-npm install,
+npm install
 
 npm run dev
 
@@ -125,6 +126,7 @@ etc
 Here is the view file content for admin
 ----------------------------------
 
+
 @extends('layouts.app')
 @section('content')
 <div class="container">
@@ -145,6 +147,8 @@ Here is the view file content for admin
     </div>
 </div>
 @endsection
+
+
 
 =========================================
 
