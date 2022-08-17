@@ -263,6 +263,81 @@ Route::get('/team', [App\Http\Controllers\TeamController::class, 'index'])->name
 Route::get('/academy', [App\Http\Controllers\AcademicController::class, 'index'])->name('academy')->middleware('academy');
 
 
+
+ Also in default Login controller add this code
+--------------------------------------------------------
+
+    protected $redirectTo;
+	
+    
+    public function redirectTo()
+    {
+    
+        switch(Auth::user()->role){
+        
+            case 2:
+            
+            $this->redirectTo = '/admin';
+            
+            return $this->redirectTo;
+            
+                break;
+                
+            case 4:
+            
+                    $this->redirectTo = '/team';
+                    
+                return $this->redirectTo;
+                
+                break;
+                
+            case 3:
+                $this->redirectTo = '/player';
+                
+                return $this->redirectTo;
+                
+                break;
+                
+            case 5:
+            
+                    $this->redirectTo = '/academy';
+                    
+                return $this->redirectTo;
+                
+                break;
+                
+            case 6:
+            
+                $this->redirectTo = '/scout';
+                
+                return $this->redirectTo;
+                
+                break;
+                
+            case 1:
+            
+				$this->redirectTo = '/superadmin';
+                
+                return $this->redirectTo;
+                
+                break;
+                
+            default:
+            
+                $this->redirectTo = '/login';
+                
+                return $this->redirectTo;
+                
+        }
+         
+        // return $next($request);
+    }
+    
+
+![image](https://user-images.githubusercontent.com/58267203/185116778-09fa4ea2-e989-457f-af37-ebd5116ac679.png)
+
+
+
 Note :- Login and Register url is default as auth default.
 -----------------------------------------------------
 
