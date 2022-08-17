@@ -229,7 +229,7 @@ php artisan make:middleware Scout
 In all middleware to check the users role and direct with following code
 ------------------------------------------------------------------------
 
-/**  */
+# 
 
 if(Auth::check() && Auth::user()->role == 1){
 
@@ -244,7 +244,7 @@ if(Auth::check() && Auth::user()->role == 1){
 
 
 
-/**  */
+#
 
 8. Now all middleware register in kernel.php (App\Http\kernel) file in $routeMiddleware array 
 
