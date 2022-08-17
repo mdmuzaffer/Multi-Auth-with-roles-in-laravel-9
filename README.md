@@ -144,9 +144,9 @@ a. superadmin.blade.php
 
 b. admin.blade.php
 
-b. player.blade.php
+c. player.blade.php
 
-b. team.blade.php
+d. team.blade.php
 
 
 
