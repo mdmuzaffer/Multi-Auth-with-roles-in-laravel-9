@@ -10,10 +10,8 @@ Make database and add in .ENV file
 
 2. Add the role field in user migration table.
 
-
 3. I have added the role field in migration default user migration schema
-
-
+==================================================================================
 
 
  public function up() {
@@ -44,7 +42,7 @@ Make database and add in .ENV file
         
     }
     
-
+=====================================
 3. them migrate with command
 ------------------------
 php artisan migrate
