@@ -341,6 +341,12 @@ public function redirectTo()
 
 ![image](https://user-images.githubusercontent.com/58267203/185116778-09fa4ea2-e989-457f-af37-ebd5116ac679.png)
 
+Similar add in register controller
+========================================
+
+![image](https://user-images.githubusercontent.com/58267203/185119338-1344bf12-2b23-485a-b6b5-3523b9273d9c.png)
+
+
 
 
 Note :- Login and Register url is default as auth default.
