@@ -267,6 +267,9 @@ Route::get('/academy', [App\Http\Controllers\AcademicController::class, 'index']
  Also in default Login controller add this code
 --------------------------------------------------------
 
+
+
+
  protected $redirectTo;
 
 
@@ -332,6 +335,8 @@ public function redirectTo()
      
     // return $next($request);
 }
+
+
     
 
 ![image](https://user-images.githubusercontent.com/58267203/185116778-09fa4ea2-e989-457f-af37-ebd5116ac679.png)
