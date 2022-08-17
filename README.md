@@ -30,9 +30,12 @@ Make database and add in .ENV file
 ------------------------
 php artisan migrate
 
-composer require laravel/ui 
-php artisan ui bootstrap --auth 
-npm install
+composer require laravel/ui ,
+
+php artisan ui bootstrap --auth ,
+
+npm install,
+
 npm run dev
 
 4. I have created seeder and added dummy data with all roles
