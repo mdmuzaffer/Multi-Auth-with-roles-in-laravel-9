@@ -13,9 +13,9 @@ Make database and add in .ENV file
 
 
 
- public function up() 
+
+ public function up() {
  
- {
  
         Schema::create('users', function (Blueprint $table) {
         
