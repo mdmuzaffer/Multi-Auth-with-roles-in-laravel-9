@@ -13,19 +13,32 @@ Make database and add in .ENV file
 
  public function up()
     {
+    
         Schema::create('users', function (Blueprint $table) {
+        
 			$table->increments('id');
+            
             $table->string('name');
+            
             $table->string('email')->unique();
+            
             $table->integer('role');
+            
             $table->timestamp('email_verified_at')->nullable();
+            
             $table->string('password');
+            
             $table->integer('status_id')->nullable();
+            
             $table->rememberToken();
+            
             $table->timestamps();
+            
 			
         });
+        
     }
+    
 
 3. them migrate with command
 ------------------------
@@ -194,8 +207,11 @@ php artisan make:middleware Scout
 In all middleware to check the users role and direct with following code
 ------------------------------------------------------------------------
 if(Auth::check() && Auth::user()->role == 1){
+
         return $next($request);
+        
    }
+   
   	return redirect()->route('login');
 
 
@@ -203,11 +219,17 @@ if(Auth::check() && Auth::user()->role == 1){
 
 
 'player' => \App\Http\Middleware\Player::class,
+
 'admin' => \App\Http\Middleware\Admin::class,
+
 'superadmin' => \App\Http\Middleware\SuperAdmin::class,
+
 'scout' => \App\Http\Middleware\Scout::class,
+
 'team' => \App\Http\Middleware\Team::class,
+
 'academy' => \App\Http\Middleware\Academic::class,
+
 
 9. Now make the route in web.php file
 ----------------------------------------------
