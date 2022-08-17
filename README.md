@@ -128,24 +128,32 @@ Here is the view file content for admin
 
 
 @extends('layouts.app')
+
 @section('content')
 <div class="container">
+    
     <div class="row justify-content-center">
         <div class="col-md-8">
+            
             <div class="card">
                 <div class="card-header">Dashboard</div>
                 <div class="card-body">
+                    
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
                     You are in ADMIN Dashboard!
+                    
                 </div>
             </div>
+            
         </div>
     </div>
+    
 </div>
+
 @endsection
 
 
@@ -195,10 +203,15 @@ if(Auth::check() && Auth::user()->role == 1){
 ----------------------------------------------
 
 Route::get('/player', [App\Http\Controllers\PlayerController::class,'index'])->name('player')->middleware('player');
+
 Route::get('/admin', [App\Http\Controllers\AdminController::class,'index'])->name('admin')->middleware('admin');
+
 Route::get('/superadmin', [App\Http\Controllers\SuperadminController::class, 'index'])->name('superadmin')->middleware('superadmin');
+
 Route::get('/scout', [App\Http\Controllers\ScoutController::class, 'index'])->name('scout')->middleware('scout');
+
 Route::get('/team', [App\Http\Controllers\TeamController::class, 'index'])->name('team')->middleware('team');
+
 Route::get('/academy', [App\Http\Controllers\AcademicController::class, 'index'])->name('academy')->middleware('academy');
 
 
